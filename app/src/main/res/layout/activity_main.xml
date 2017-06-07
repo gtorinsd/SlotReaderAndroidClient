@@ -10,18 +10,19 @@
     tools:context="com.example.user.slotreader.MainActivity">
 
 
-    <FrameLayout
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/BoardLayoutMarginTop"
+        android:orientation="horizontal"
+        android:id="@+id/boardLayout"
         android:background="@drawable/blackboard">
-
-        <TextSwitcher
-            android:id="@+id/textSwitcher"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:theme="@android:style/Theme.Holo.Light"
-            android:verticalScrollbarPosition="defaultPosition" />
-    </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>

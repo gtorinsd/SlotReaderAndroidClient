@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
         <dimen name="BoardLayoutMarginTop">100dp</dimen>
+        <item name="TextSwitchertextSize" type="dimen" format="float">30.0</item>
 </resources>
