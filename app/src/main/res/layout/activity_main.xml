@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:theme="@android:style/Widget.Holo.WebTextView"
+    android:orientation="vertical"
+    tools:context="com.example.user.slotreader.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/BoardLayoutMarginTop"
+        android:background="@drawable/blackboard">
+
+        <TextSwitcher
+            android:id="@+id/textSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:verticalScrollbarPosition="defaultPosition" />
+    </FrameLayout>
+
+</LinearLayout>
