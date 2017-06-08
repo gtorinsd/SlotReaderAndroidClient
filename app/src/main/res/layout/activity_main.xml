@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:theme="@android:style/Widget.Holo.WebTextView"
     android:orientation="vertical"
     tools:context="com.example.user.slotreader.MainActivity">
 
@@ -16,40 +15,70 @@
         android:layout_marginTop="@dimen/BoardLayoutMarginTop"
         android:orientation="vertical"
         android:id="@+id/boardLayoutAll"
-        android:background="@drawable/blackboard"
+        android:background="@drawable/boarddark_1x"
         >
 
-
-        <Button
-            android:id="@+id/button3"
+        <ImageButton
+            android:id="@+id/buttonUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TopButtonStyle"
-            android:drawableEnd="@drawable/up"
+            style="@style/UpDownButtonStyle"
+            android:src="@drawable/up"
             />
 
         <LinearLayout
             android:id="@+id/boardLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/NumberPickerLeftRightMargin"
             android:layout_marginRight="@dimen/NumberPickerLeftRightMargin"
-
             >
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button4"
+        <ImageButton
+            android:id="@+id/buttonDown"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/BottomButtonStyle"
-            android:drawableEnd="@drawable/down"
+            style="@style/UpDownButtonStyle"
+            android:src="@drawable/down"
             />
-
-
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:src="@drawable/image_1_1x"
+            style="@style/LetterButtonsStyle"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:src="@drawable/image_3_1x"
+            style="@style/LetterButtonsStyle"/>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:src="@drawable/image_4_1x"
+            style="@style/LetterButtonsStyle"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            app:srcCompat="@drawable/image_5_1x"
+            style="@style/LetterButtonsStyle"/>
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:src="@drawable/image_5plus_1x"
+            style="@style/LetterButtonsStyle"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>
